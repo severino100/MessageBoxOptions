@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.menuString = new System.Windows.Forms.ToolStripMenuItem();
             this.menuTitulo = new System.Windows.Forms.ToolStripMenuItem();
@@ -38,13 +39,13 @@
             this.menuRetryCancel = new System.Windows.Forms.ToolStripMenuItem();
             this.menButoesSimNao = new System.Windows.Forms.ToolStripMenuItem();
             this.menuButoesSimNaoCancelar = new System.Windows.Forms.ToolStripMenuItem();
+            this.atalhoEtcToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.iconsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuIconsInformacao = new System.Windows.Forms.ToolStripMenuItem();
             this.menuIconsErro = new System.Windows.Forms.ToolStripMenuItem();
             this.menuIconsNenhum = new System.Windows.Forms.ToolStripMenuItem();
             this.menuIconsPergunta = new System.Windows.Forms.ToolStripMenuItem();
             this.menuIconsAviso = new System.Windows.Forms.ToolStripMenuItem();
-            this.atalhoEtcToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuPosicaoDosObjetos = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -133,6 +134,13 @@
             this.menuButoesSimNaoCancelar.Text = "Sim, Nao e Cancelar";
             this.menuButoesSimNaoCancelar.Click += new System.EventHandler(this.menuButoesSimNaoCancelar_Click);
             // 
+            // atalhoEtcToolStripMenuItem
+            // 
+            this.atalhoEtcToolStripMenuItem.Name = "atalhoEtcToolStripMenuItem";
+            this.atalhoEtcToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.atalhoEtcToolStripMenuItem.Text = "Atalho etc";
+            this.atalhoEtcToolStripMenuItem.Click += new System.EventHandler(this.atalhoEtcToolStripMenuItem_Click);
+            // 
             // iconsToolStripMenuItem
             // 
             this.iconsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -148,44 +156,37 @@
             // menuIconsInformacao
             // 
             this.menuIconsInformacao.Name = "menuIconsInformacao";
-            this.menuIconsInformacao.Size = new System.Drawing.Size(152, 22);
+            this.menuIconsInformacao.Size = new System.Drawing.Size(135, 22);
             this.menuIconsInformacao.Text = "Informaçao";
             this.menuIconsInformacao.Click += new System.EventHandler(this.menuIconsInformacao_Click);
             // 
             // menuIconsErro
             // 
             this.menuIconsErro.Name = "menuIconsErro";
-            this.menuIconsErro.Size = new System.Drawing.Size(152, 22);
+            this.menuIconsErro.Size = new System.Drawing.Size(135, 22);
             this.menuIconsErro.Text = "Erro";
             this.menuIconsErro.Click += new System.EventHandler(this.menuIconsErro_Click);
             // 
             // menuIconsNenhum
             // 
             this.menuIconsNenhum.Name = "menuIconsNenhum";
-            this.menuIconsNenhum.Size = new System.Drawing.Size(152, 22);
+            this.menuIconsNenhum.Size = new System.Drawing.Size(135, 22);
             this.menuIconsNenhum.Text = "Nenhum";
             this.menuIconsNenhum.Click += new System.EventHandler(this.menuIconsNenhum_Click);
             // 
             // menuIconsPergunta
             // 
             this.menuIconsPergunta.Name = "menuIconsPergunta";
-            this.menuIconsPergunta.Size = new System.Drawing.Size(152, 22);
+            this.menuIconsPergunta.Size = new System.Drawing.Size(135, 22);
             this.menuIconsPergunta.Text = "Pergunta";
             this.menuIconsPergunta.Click += new System.EventHandler(this.menuIconsPergunta_Click);
             // 
             // menuIconsAviso
             // 
             this.menuIconsAviso.Name = "menuIconsAviso";
-            this.menuIconsAviso.Size = new System.Drawing.Size(152, 22);
+            this.menuIconsAviso.Size = new System.Drawing.Size(135, 22);
             this.menuIconsAviso.Text = "Aviso";
             this.menuIconsAviso.Click += new System.EventHandler(this.menuIconsAviso_Click);
-            // 
-            // atalhoEtcToolStripMenuItem
-            // 
-            this.atalhoEtcToolStripMenuItem.Name = "atalhoEtcToolStripMenuItem";
-            this.atalhoEtcToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.atalhoEtcToolStripMenuItem.Text = "Atalho etc";
-            this.atalhoEtcToolStripMenuItem.Click += new System.EventHandler(this.atalhoEtcToolStripMenuItem_Click);
             // 
             // menuPosicaoDosObjetos
             // 
@@ -198,6 +199,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(462, 261);
             this.Controls.Add(this.menuStrip1);
